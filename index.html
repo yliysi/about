@@ -2,30 +2,330 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>baddest cat in town</title>
+        <title>get your e-girls here</title>
     </head>
     
 <!-- get ready for the ugliest and laziest coding possible. im a baby. -->
     
     <style>
        
+       /*BASIC SCTRUCTURE SHIT*/
        body {
-          text-align: center; 
-          background-color: red;
+        background-color: #4287f5;
+        text-align: left;
+        font-family: arial;
        }
+       
+       #main {
+         background-color: white;
+         margin: 50px auto;
+         width: 50%;
+       }
+       
+       /*TITLE*/
+       h1 {
+         text-align: center;
+         font-family: comic sans ms;
+       }
+       
+       #intro {
+         text-align: center;
+       }
+       
+       /*MENU LIST SHIT*/
+       li {
+        display: inline;
+        font-size: 20px;
+       }
+       
+       ul {
+        table-layout: fixed;
+        z-index: 1;
+       }
+      
+      /* SECTION BREAK LINE */
+       #secbreak {
+         display: block;
+         margin-top: 15%;
+         margin-bottom: 15%;
+         border-width: 10px;
+         border-color: #4287f5;
+       }
+       
+       /*NATSUKI CHARA SECTION that failed lol
+       .container {
+         position: relative;
+         width: 100%;
+       }
+       
+       .center {
+         position: absolute;
+         left: 0;
+         top: 50%;
+       } 
+       
+       .natsuki {
+         z-index: -1px;
+         left: 30px;
+         position: absolute;
+         clip: rect(0px, 550px, 300px, 0px);
+        
+       }
+       */
+       
+       /* NATSUKI IMG */
+       .natsuki {
+         left: 99px;
+         bottom: -1530px;
+         position: absolute;
+         clip: rect(0px, 550px, 200px, 0px);
+        
+       }
+       
+       /*TENMA CHARA SECTION that failed lol
+       .container2 {
+         position: relative;
+       }
+       
+       .center2 {
+         position: absolute;
+         left: 0;
+         top: 50%;
+         width: 100%;
+       }
+       
+       .tenma {
+         z-index: -2px;
+         left: -170px;
+         top: -240px;
+         position: absolute;
+         clip: rect(0px, 750px, 400px, 0px);
+        
+       }
+       */
+      
+      /* TENMA IMG */
+       .tenma {
+         left: -59px;
+         bottom: -1660px;
+         position: absolute;
+         clip: rect(0px, 750px, 320px, 0px);
+        
+       }
+       
+       /*TOP-MENU*/
+       #menu {
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        position: sticky;
+        top: 0px;
+        background-color: #4287f5;
+       }
+       
+       #menutxt {
+         font-size: 10px;
+       }
+       
+       /*MENU LINK COLOUR*/
+       a:link {
+         color: white;
+       }
+       
+       /*MENU LINK HOVER COLOUR*/
+       a:hover {
+         color: #4287f5;
+       }
+       
+       /*NORMAL LINK COLOUR*/
+       .link {
+         color: black;
+       }
+        
        
     </style>
     
-    
+    <!-- HERE COME THY HTML -->
     <body>
+    <div id="main">
     
+        <!-- TITLE & introduction -->
         <h1>i wish i knew what i was doing</h1>
         
-        <img src="https://ih0.redbubble.net/image.706613289.7627/flat,1000x1000,075,f.jpg" alt="picture of me" height="100">
-    
-        <!-- tai sammakkomeme https://66.media.tumblr.com/7c323added159bd60b9996bc6df26b9e/tumblr_ogymrjjTxD1rhk3pjo1_1280.jpg -->
+        <div id="intro">
+          <img src="https://ih0.redbubble.net/image.706613289.7627/flat,1000x1000,075,f.jpg" alt="picture of me" height="100">
+          <!-- or use the frog memepic https://66.media.tumblr.com/7c323added159bd60b9996bc6df26b9e/tumblr_ogymrjjTxD1rhk3pjo1_1280.jpg -->
+          <p>hi welcome to my page :) please don't laugh im trying to learn</p>
+        </div>
         
-        <p>hi welcome to my page :) please clap</p>
+        <!-- MENU -->
+        <ul id="menu" z-index="1">
+            <div id="menutxt"><p>why is it doing this</p></div>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#stuff">STUFF I LIKE</a></li>
+            <li><a href="#fav">FAV CHARAS</a></li>
+        </ul>
         
+        <!-- SECTION BREAK -->
+        <hr id="secbreak" noshade>
+        
+        <div id="about">
+          <p>name is Catrina (call me cat, riina or ysi!) :-D<br><br>
+          21yo (3rd of February)<br><br>
+          i’m cis female but i respond to any pronouns<br><br>
+          location: southern finland (uusimaa)<br><br>
+          languages: finnish, swedish(finlandssvenks) and english<br><br>
+          myers: ISFJ<br><br>
+          my favourite colour is blue!!<br><br>
+          I’ve graduated as a printing assistant/graphic designer and I’m studying software engineering right now<br><br>
+          i have dysphasia (i’m rly insecure and i can make every situation awkward for myself)<br><br>
+          very easily influenced<br><br>
+          i have a favourite for like every mood so i tend to be into different things and change my mind pretty often</p>
+        </div>
+        
+        <!-- SECTION BREAK -->
+        <hr id="secbreak" noshade>
+        
+        <div id="stuff">
+          <p><a href="https://myanimelist.net/profile/ysi" class="link">some animus and mangos</a><br><br>
+          mobile games<br>
+          -utapri shining live<br>
+          -bandori<br>
+          -act! addict! actors! (a3)<br>
+          -SideM<br>
+          -touken ranbu<br>
+          and most likely some other joseimuke games<br><br>
+          
+          more games<br>
+          -persona 5<br>
+          -disgaea ((5))<br>
+          -ace attorney<br>
+          -sly cooper<br>
+          -borderlands ((2))<br>
+          -animal crossing<br>
+          -danganronpa<br>
+          -random otome/bl titles (visual novel/simulation fan lol)<br>
+          idk just check my steam page<br><br>
+          
+          <a href="https://www.doujinshi.org/user/yliysi/" class="link">doujin</a>,
+          <a href="https://myfigurecollection.net/profile/yliysi/" class="link">figure & merch</a> collecting
+            
+          </p>
+        </div>
+        
+        <!-- SECTION BREAK -->
+        <hr id="secbreak" noshade>
+        
+        <!-- failed divider thingy 
+        * utapri fav section *
+        <div class="container">
+          <img class="natsuki" src="https://i.ibb.co/cYtZzCd/idol-natsuki-103065-2-webp.png" alt="picture of shinomiya natsuki" height="700px">
+          <br>
+          <div class="center"><p id="fav"><strong>utapri</strong></p>
+          –<strong>Natsuki,</strong> Otoya, Cecil<br>
+          -Starish!!!<br><br>
+          </div>
+        </div>
+        
+        * a3 fav section *
+        <div class="container2">
+        <img class="tenma" src="https://i.ibb.co/L9f07kS/MANKAI-Kaika-Sengen-Tenma-Serious-SSR-Transparent.png" alt="picture of sumeragi tenma" height="700px">
+        <div class="center2"><p><strong>a3!</strong></p>
+        –Tenma, Kumon, Homare, Citron, Omi<br>
+        -Natsugumi, Akigumi<br><br>
+          
+        </div>
+        </div> -->
+        
+        <!-- <div style="text-align: center;">
+          <div style="display: inline-block; text-align: left;">
+            centered
+          </div>
+        </div> -->
+        
+        <div id="fav">
+          <p><strong>utapri</strong><br>
+          –<strong>Natsuki,</strong> Otoya, Cecil<br>
+          -Starish!!!<br><br>  
+          </p>
+          <img class="natsuki" src="https://i.ibb.co/cYtZzCd/idol-natsuki-103065-2-webp.png" alt="picture of shinomiya natsuki" height="700px">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <p><strong>a3!</strong><br>
+          –<strong>Tenma,</strong> Kumon, Homare, Citron, Omi<br>
+          -Natsugumi, Akigumi<br><br>  
+          </p>
+          <img class="tenma" src="https://i.ibb.co/L9f07kS/MANKAI-Kaika-Sengen-Tenma-Serious-SSR-Transparent.png" alt="picture of sumeragi tenma" height="700px">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <hr noshade color="white" size="25%"> <!-- small section break -->
+          <p>other favs... :-)</p>
+          <table id="favcharas">
+            <thead>
+              <tr>
+                <th><img src="https://i.ibb.co/Gv5Zq5R/4f97bffd.png" width="120"></th>
+                <th><img src="https://i.ibb.co/5R0KmQt/0c78c5de.png" width="120"></th>
+                <th><img src="https://i.ibb.co/jVWwpkN/8c34911d.jpg" width="120"></th>
+              </tr>
+               <tbody>
+              <tr>
+                <td>apollo</td>
+                <td>mutsunokami</td>
+                <td>fenrir</td>
+              </tr>
+               </tbody>
+              <tr>
+                <th><img src="https://i.ibb.co/dg7y6Gd/946e190e.jpg" width="120"></th>
+                <th><img src="https://i.ibb.co/bNxkFVL/9ce0e4bc.jpg" width="120"></th>
+                <th><img src="https://i.ibb.co/LhKC7f2/f20af36c.png" width="120"></th>
+              </tr>
+               <tbody>
+              <tr>
+                <td>eijun</td>
+                <td>zen</td>
+                <td>deadpool</td>
+              </tr>
+               </tbody>
+              <tr>
+                <th><img src="https://i.ibb.co/9bFfB3t/2c83cc95.png" width="120"></th>
+                <th><img src="https://i.ibb.co/V3Dcgfy/c45d2106.jpg" width="120"></th>
+                <th><img src="https://i.ibb.co/Qd6mNV7/3589ae57.jpg" width="120"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>shishiou</td>
+                <td>tony</td>
+                <td>ran</td>
+              </tr>
+            </tbody>
+            <tr>
+                <th><img src="https://i.ibb.co/S0vkdHZ/216269da.jpg" width="120"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ryuji</td>
+              </tr>
+            </tbody>
+          </table>
+          
+        </div>
+        
+        <br>
+        </div>
+        </div>
     </body>
 </html>
