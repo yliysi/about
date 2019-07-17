@@ -14,12 +14,15 @@
         background-color: #4287f5;
         text-align: left;
         font-family: arial;
+        font-size: 20px;
+        z-index: 1;
        }
        
        #main {
          background-color: white;
          margin: 50px auto;
-         width: 50%;
+         width: 90%;
+         z-index: 1;
        }
        
        /*TITLE*/
@@ -35,7 +38,7 @@
        /*MENU LIST SHIT*/
        li {
         display: inline;
-        font-size: 20px;
+        font-size: 50px;
        }
        
        ul {
@@ -73,15 +76,6 @@
        }
        */
        
-       /* NATSUKI IMG */
-       .natsuki {
-         position: absolute;
-         margin-left: -90;
-         margin-top: -60;
-         clip: rect(0px, 550px, 200px, 0px);
-        
-       }
-       
        /*TENMA CHARA SECTION that failed lol
        .container2 {
          position: relative;
@@ -103,20 +97,12 @@
         
        }
        
-         left: 50;
-         right: 50;
-         top: 1870;
-         bottom: 500; for tenma
        */
-      
-      /* TENMA IMG */
-       .tenma {
-         position: absolute;
-         margin-left: -250;
-         margin-top: -160;
-         clip: rect(0px, 750px, 320px, 0px);
-        
+       
+       .natsuki {
+         z-index: -1;
        }
+      
        
        /*TOP-MENU*/
        #menu {
@@ -159,7 +145,7 @@
     <div id="main">
     
         <!-- TITLE & introduction -->
-        <h1>i wish i knew what i was doing</h1>
+        <h1 id="top">i wish i knew what i was doing</h1>
         
         <div id="intro">
           <img src="https://ih0.redbubble.net/image.706613289.7627/flat,1000x1000,075,f.jpg" alt="picture of me" height="100">
@@ -169,10 +155,13 @@
         
         <!-- MENU -->
         <ul id="menu" z-index="1" style="color: #ffffff;">
-            <div id="menutxt"><p>why is it doing this</p></div>
+            <div id="menutxt"><p>uhhhhhhhh i hope ur not looking at this w ur phone</p></div>
+            <li><a href="#top">TOP</a></li>
+            <!--
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#stuff">STUFF I LIKE</a></li>
             <li><a href="#fav">FAV CHARAS</a></li>
+            -->
         </ul>
         
         <!-- SECTION BREAK -->
@@ -257,7 +246,7 @@
           –<strong>Natsuki,</strong> Otoya, Cecil<br>
           -Starish!!!<br><br>  
           </p>
-          <img class="natsuki" src="https://i.ibb.co/cYtZzCd/idol-natsuki-103065-2-webp.png" alt="picture of shinomiya natsuki" height="700px">
+          <img class="natsuki" src="https://i.ibb.co/k46qqfP/natsuki-header.png" alt="picture of shinomiya natsuki" width="700px" align="left"><br>
           <br>
           <br>
           <br>
@@ -270,7 +259,9 @@
           –<strong>Tenma,</strong> Kumon, Homare, Citron, Omi<br>
           -Natsugumi, Akigumi<br><br>  
           </p>
-          <img class="tenma" src="https://i.ibb.co/L9f07kS/MANKAI-Kaika-Sengen-Tenma-Serious-SSR-Transparent.png" alt="picture of sumeragi tenma" height="700px">
+          <div id="tenmaposi">
+          <img class="tenma" src="https://i.ibb.co/Hpk9NkR/tenma-header.png" alt="picture of sumeragi tenma" width="700px" align="left">
+          </div>
           <br>
           <br>
           <br>
@@ -280,7 +271,6 @@
           <br>
           <br>
           <hr noshade color="white" size="25%"> <!-- small section break -->
-          <p>other favs... :-)</p>
           <table id="favcharas" align="center">
             <thead>
               <tr>
