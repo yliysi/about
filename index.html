@@ -7,167 +7,90 @@
     
 <!-- get ready for the ugliest and laziest coding possible. im a baby. -->
     
-    <style>
-       
-       /*BASIC SCTRUCTURE SHIT*/
-       body {
-        background-color: #4287f5;
-        text-align: left;
-        font-family: arial;
-        font-size: 20px;
-        z-index: 1;
-       }
-       
-       #main {
-         background-color: white;
-         margin: 50px auto;
-         width: 90%;
-         z-index: 1;
-       }
-       
-       /*TITLE*/
-       h1 {
-         text-align: center;
-         font-family: comic sans ms;
-       }
-       
-       #intro {
-         text-align: center;
-       }
-       
-       /*MENU LIST SHIT*/
-       li {
-        display: inline;
-        font-size: 50px;
-       }
-       
-       ul {
-        table-layout: fixed;
-        z-index: 1;
-       }
+    <style> 
+     
+      .wrapper {
+        display: flex;
+        justify-content: space-between;
+      }
       
-      /* SECTION BREAK LINE */
-       #secbreak {
-         display: block;
-         margin-top: 15%;
-         margin-bottom: 15%;
-         border-width: 10px;
-         border-color: #4287f5;
-       }
-       
-       /*NATSUKI CHARA SECTION that failed lol
-       .container {
-         position: relative;
-         width: 100%;
-       }
-       
-       .center {
-         position: absolute;
-         left: 0;
-         top: 50%;
-       } 
-       
-       .natsuki {
-         z-index: -1px;
-         left: 30px;
-         position: absolute;
-         clip: rect(0px, 550px, 300px, 0px);
-        
-       }
-       */
-       
-       /*TENMA CHARA SECTION that failed lol
-       .container2 {
-         position: relative;
-       }
-       
-       .center2 {
-         position: absolute;
-         left: 0;
-         top: 50%;
-         width: 100%;
-       }
-       
-       .tenma {
-         z-index: -2px;
-         left: -170px;
-         top: -240px;
-         position: absolute;
-         clip: rect(0px, 750px, 400px, 0px);
-        
-       }
-       
-       */
-       
-       .natsuki {
-         z-index: -1;
-       }
-      
-       
-       /*TOP-MENU*/
-       #menu {
+      .main,
+      .sidebar {
+        border: 3px solid black;
+        padding: 15px;
+        background-color: #fff;
         text-align: center;
-        font-weight: bold;
-        color: white;
+      }
+      
+      .main {
+        width: 60%;
+        height: 310vh;
+        font-size: 25px;
+      }
+      
+      .sidebar {
+        width: 25%;
+        height: 40vh;
+        position: webkit-sticky;
         position: sticky;
-        top: 0px;
-        background-color: #4287f5;
-       }
-       
-       #menutxt {
-         font-size: 10px;
-       }
-       
-       /*MENU LINK COLOUR*/
-       a:link {
-         color: black;
-       }
-       
-       /*MENU LINK HOVER COLOUR*/
-       a:hover {
-         color: #4287f5;
-       }
-       
-       /*NORMAL LINK COLOUR*/
-       .link {
-         color: black;
-       }
-       
-       #favcharas {
-         text-align: center;
-         font-size: 10px;
-       }
-       
+        top: 0;
+      }
+      
+      .sidebar strong {
+        font-size: 25px;
+        color: #4287f5;
+      }
+      
+      .sidebar p {
+        font-size: 20px;
+      }
+      
+      body {
+        background-color: #ccc;
+        font-family: sans-serif;
+        padding: 10px;
+      }
+      
+      li {
+        
+        display: inline;
+        font-size: 30px;
+      }
+      
+      ul {
+        text-align: center;
+        table-layout: fixed;
+        padding-lefT: 1px;
+      }
+      
+      #about {
+        text-align: left;
+      }
+      
+      #stuff {
+        text-align: left;
+      }
+      
+      #fav {
+        text-align: left;
+      }
+      
+      #favcharas {
+        text-align: center;
+      }
+      
     </style>
     
     <!-- HERE COME THY HTML -->
     <body>
-    <div id="main">
-    
-        <!-- TITLE & introduction -->
-        <h1 id="top">i wish i know what im doing</h1>
-        
-        <div id="intro">
-          <img src="https://ih0.redbubble.net/image.706613289.7627/flat,1000x1000,075,f.jpg" alt="picture of me" height="100">
-          <!-- or use the frog memepic https://66.media.tumblr.com/7c323added159bd60b9996bc6df26b9e/tumblr_ogymrjjTxD1rhk3pjo1_1280.jpg -->
-          <p>hi welcome to my page :) please don't laugh im trying to learn</p>
-        </div>
-        
-        <!-- MENU -->
-        <ul id="menu" z-index="1" style="color: #ffffff;">
-            <div id="menutxt"><p>uhhhhhhhh i hope ur not looking at this w ur phone</p></div>
-            <li><a href="#top">TOP</a></li>
-            <!--
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#stuff">STUFF I LIKE</a></li>
-            <li><a href="#fav">FAV CHARAS</a></li>
-            -->
-        </ul>
-        
-        <!-- SECTION BREAK -->
+    <div class="wrapper">
+      <div class="main">
+        hi welcome to my page, pls don't bully i'm learning.
+        <br>
         <hr id="secbreak" noshade>
         
-        <div id="about"><br><br>
+        <strong>about me:</strong>
+        <div id="about">
           <p>name is Catrina (call me cat, riina or ysi!) :-D<br><br>
           21yo (3rd of February)<br><br>
           i’m cis female but i respond to any pronouns<br><br>
@@ -180,13 +103,12 @@
           very easily influenced<br><br>
           i have a favourite for like every mood so i tend to be into different things and change my mind pretty often</p>
         </div>
-        
-        <!-- SECTION BREAK -->
         <hr id="secbreak" noshade>
         
-        <div id="stuff"><br><br>
+        <strong>stuff i like:</strong>
+        <div id="stuff">
           <p><a href="https://myanimelist.net/profile/ysi" class="link">some animus and mangos</a><br><br>
-          mobile games<br>
+          mobage<br>
           -utapri shining live<br>
           -bandori<br>
           -act! addict! actors! (a3)<br>
@@ -194,9 +116,10 @@
           -touken ranbu<br>
           and most likely some other joseimuke games<br><br>
           
-          more games<br>
+          games<br>
           -persona 5<br>
           -disgaea ((5))<br>
+          -fire emblem three houses<br>
           -ace attorney<br>
           -sly cooper<br>
           -borderlands ((2))<br>
@@ -210,67 +133,26 @@
             
           </p>
         </div>
+        <hr id="secbreak" noshade>
         
-        <!-- SECTION BREAK -->
-        <hr id="secbreak" noshade><br><br>
-        
-        <!-- failed divider thingy 
-        * utapri fav section *
-        <div class="container">
-          <img class="natsuki" src="https://i.ibb.co/cYtZzCd/idol-natsuki-103065-2-webp.png" alt="picture of shinomiya natsuki" height="700px">
-          <br>
-          <div class="center"><p id="fav"><strong>utapri</strong></p>
-          –<strong>Natsuki,</strong> Otoya, Cecil<br>
-          -Starish!!!<br><br>
-          </div>
-        </div>
-        
-        * a3 fav section *
-        <div class="container2">
-        <img class="tenma" src="https://i.ibb.co/L9f07kS/MANKAI-Kaika-Sengen-Tenma-Serious-SSR-Transparent.png" alt="picture of sumeragi tenma" height="700px">
-        <div class="center2"><p><strong>a3!</strong></p>
-        –Tenma, Kumon, Homare, Citron, Omi<br>
-        -Natsugumi, Akigumi<br><br>
-          
-        </div>
-        </div> -->
-        
-        <!-- <div style="text-align: center;">
-          <div style="display: inline-block; text-align: left;">
-            centered
-          </div>
-        </div> -->
-        
+        <strong>fav charas:</strong>
         <div id="fav">
           <p><strong>utapri</strong><br>
           –<strong>Natsuki,</strong> Otoya, Cecil<br>
           -Starish!!!<br><br>  
           </p>
-          <img class="natsuki" src="https://i.ibb.co/k46qqfP/natsuki-header.png" alt="picture of shinomiya natsuki" width="700px" align="left"><br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
+          <img class="natsuki" src="https://i.ibb.co/k46qqfP/natsuki-header.png" 
+          alt="picture of shinomiya natsuki" width="700px" align="left">
+          </br> </br>
+          
           <p><strong>a3!</strong><br>
           –<strong>Tenma,</strong> Kumon, Homare, Citron, Omi<br>
           -Natsugumi, Akigumi<br><br>  
           </p>
-          <div id="tenmaposi">
-          <img class="tenma" src="https://i.ibb.co/Hpk9NkR/tenma-header.png" alt="picture of sumeragi tenma" width="700px" align="left">
-          </div>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <hr noshade color="white" size="25%"> <!-- small section break -->
+          <img class="tenma" src="https://i.ibb.co/Hpk9NkR/tenma-header.png" 
+          alt="picture of sumeragi tenma" width="700px" align="left">
+          </br> </br>
+          
           <table id="favcharas" align="center">
             <thead>
               <tr>
@@ -323,8 +205,28 @@
           
         </div>
         
+      </div>
+      
+      <!-- RIGHT SIDEBAR -->
+      <div class="sidebar">
+        <img id="sidebarimg" src="https://ysi.carrd.co/assets/images/image01.jpg?v79754273129551" alt="Sleeping Tenten" height="150px">
+        <p><strong>catrina</strong> <br>oh shit.... a gamer.......</p>
+        <div class="some">
+          <br>
+          <a href="https://twitter.com/catriisaloser"><img id="twiticon" src="https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c53e.png"
+          alt="twitter icon" height="30px"/></a>
+          <a href="https://www.youtube.com/channel/UCkcC_vzDJdkzGs_9MvL9cjQ"><img id="yticon" src="https://i.pinimg.com/originals/19/7b/36/197b365922d1ea3aa1a932ff9bbda4a6.png"
+          alt="youtube icon" height="30px"/></a>
+          <a href="http://steamcommunity.com/id/yliysi/"><img id="steamicon" src="https://cdn.freebiesupply.com/images/large/2x/steam-logo-transparent.png"
+          alt="steam icon" height="30px"/></a>
+          <br>
+          <ul>
+            <li><a href="#main">back to top baby</a></li>
+          </ul>
         <br>
+          
         </div>
-        </div>
+      </div>
+    </div>
     </body>
 </html>
