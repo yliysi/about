@@ -1,0 +1,71 @@
+body {
+    background: rgb(102,102,102);
+    background: linear-gradient(90deg, rgba(102,102,102,1) 0%, rgba(0,111,255,1) 100%);
+    font-family: sans-serif,arial;
+    color: black;
+    font-size: 20px;
+}
+
+/* i hope header doesnt look like shit in old browsers*/
+header {
+    background: white;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.backmain {
+    background: white;
+    width: 500px;
+    height: 500px;
+    position:absolute;
+    left:0; right:0;
+    top:0; bottom:0;
+    margin:auto;
+    max-width:100%;
+    max-height:100%;
+    overflow:auto;
+    z-index: 1;
+}
+
+.main {
+    background: white;
+    text-align: center;
+    border: 10px rgba(0,111,255,1);
+    border-style: solid hidden;
+    margin: 25px;
+    padding: 25px;
+}
+
+#seraphina {
+    height: 150px;
+    z-index: 2;
+}
+
+#about {
+    font-size: 30px;
+    color: rgba(0,111,255,1);
+}
+
+ul {
+    text-align: center;
+    table-layout: fixed;
+    padding-lefT: 1px; 
+}
+li {
+    display: inline;
+    font-size: 20px;
+}
+
+a {
+    color: black;
+}
+
+#txt {
+    text-align: left;
+}
