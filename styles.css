@@ -42,6 +42,10 @@ header {
     padding: 25px;
 }
 
+#me{
+    margin:25px;
+}
+
 #seraphina {
     height: 150px;
     z-index: 2;
