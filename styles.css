@@ -6,47 +6,55 @@ body {
     font-size: 20px;
 }
 
-.header{
-    padding: 25px;
-}
-
-.footer{
-    padding: 25px;
-}
-
 .main {
+    align-items: center;
+    width: 55vh;
     background: white;
     border-style: hidden solid;
     text-align: center;
-    margin: 50px;
-    padding: 50px;
+    margin: 10vh;
+    padding: 5vh;
 }
 
+.outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*seraphine img*/
 #seraphina {
+    margin:5px;
     height: 150px;
-    z-index: 2;
 }
 
-#about {
+/*title txt*/
+.about {
     font-size: 30px;
     color: rgba(0,111,255,1);
+}
+
+/*smaller txt*/
+#s {
+    font-size: 15px;
 }
 
 ul {
     text-align: center;
     table-layout: fixed;
-    padding-lefT: 1px; 
+    padding-left: 1px; 
 }
 li {
     display: inline;
     font-size: 20px;
 }
 
+/*link colour*/
 a {
     color: black;
 }
 
-#txt {
+.txt {
     text-align: left;
 }
 
